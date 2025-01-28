@@ -19,7 +19,6 @@ public class Teacher extends Person {
 
 	@Override
 	public void getDetails() {
-		super.getDetails();
-		System.out.println("Área: " + getArea());
+		System.out.println("Nombre completo: " + super.name + " " + super.surname + ", área: " + getArea());
 	}
 }

@@ -16,14 +16,12 @@ public class Exercise23 {
 
     public static Person addMapValue(Map<String, Person> map, String key, Person value) {
         map.put(key, value);
-        return value;
+        return map.get(key);
     }
 
     public static void printMapValues(Map<String, Person> map) {
         for (Map.Entry<String, Person> entry : map.entrySet()) {
-            System.out.println("Clase: " + entry.getKey());
             entry.getValue().getDetails();
-            System.out.println("\n");
         }
     }
 
